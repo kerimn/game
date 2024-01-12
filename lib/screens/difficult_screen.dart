@@ -8,6 +8,7 @@ class DifficultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.height);
     return Scaffold(
       body: Stack(
         children: [
@@ -118,7 +119,6 @@ class DifficultScreen extends StatelessWidget {
                   width: MediaQuery.of(context).size.width * 0.6,
                   height: MediaQuery.of(context).size.height * 0.45,
                   fit: BoxFit.cover,
-                  alignment: Alignment.center,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
