@@ -118,7 +118,7 @@ class LevelChoise extends StatelessWidget {
                                 width: 20,
                               ),
                               Text(
-                                "1500",
+                                "150",
                                 style: Theme.of(context)
                                     .textTheme
                                     .titleLarge!
@@ -142,6 +142,7 @@ class LevelChoise extends StatelessWidget {
             children: [
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
+                left:  MediaQuery.of(context).size.width*0.02,
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -154,14 +155,14 @@ class LevelChoise extends StatelessWidget {
                   child: Image.asset(
                     AppImages.dash,
                     width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.59,
-                left: MediaQuery.of(context).size.width * 0.075,
+                top: MediaQuery.of(context).size.height * 0.63,
+                left: MediaQuery.of(context).size.width * 0.1,
                 child: GestureDetector(
                   behavior: HitTestBehavior.translucent,
                   onTap: () {
@@ -200,12 +201,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.39,
+                top: MediaQuery.of(context).size.height * 0.43,
                 left: MediaQuery.of(context).size.width * 0.195,
                 child: const Text(
                   "2",
@@ -233,12 +234,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.59,
+                top: MediaQuery.of(context).size.height * 0.63,
                 left: MediaQuery.of(context).size.width * 0.295,
                 child: const Text(
                   "3",
@@ -266,12 +267,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.39,
+                top: MediaQuery.of(context).size.height * 0.435,
                 left: MediaQuery.of(context).size.width * 0.395,
                 child: const Text(
                   "4",
@@ -299,12 +300,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.59,
+                top: MediaQuery.of(context).size.height * 0.63,
                 left: MediaQuery.of(context).size.width * 0.495,
                 child: const Text(
                   "5",
@@ -332,12 +333,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.39,
+                top: MediaQuery.of(context).size.height * 0.435,
                 left: MediaQuery.of(context).size.width * 0.595,
                 child: const Text(
                   "6",
@@ -365,13 +366,13 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.59,
-                left: MediaQuery.of(context).size.width * 0.695,
+                top: MediaQuery.of(context).size.height * 0.635,
+                left: MediaQuery.of(context).size.width * 0.7,
                 child: const Text(
                   "7",
                   style: TextStyle(
@@ -398,12 +399,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.2,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.39,
+                top: MediaQuery.of(context).size.height * 0.43,
                 left: MediaQuery.of(context).size.width * 0.795,
                 child: const Text(
                   "8",
@@ -431,12 +432,12 @@ class LevelChoise extends StatelessWidget {
                 child: Image.asset(
                   AppImages.dash,
                   width: MediaQuery.of(context).size.width * 0.2,
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  // height: MediaQuery.of(context).size.height * 0.18,
                   fit: BoxFit.cover,
                 ),
               ),
               Positioned(
-                top: MediaQuery.of(context).size.height * 0.59,
+                top: MediaQuery.of(context).size.height * 0.635,
                 left: MediaQuery.of(context).size.width * 0.895,
                 child: const Text(
                   "9",

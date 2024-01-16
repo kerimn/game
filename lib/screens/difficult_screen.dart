@@ -51,7 +51,7 @@ class _DifficultScreenState extends State<DifficultScreen> {
             fit: BoxFit.cover,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 35),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
