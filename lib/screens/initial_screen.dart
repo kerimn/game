@@ -80,7 +80,7 @@ class _InitialScreenState extends State<InitialScreen> {
           timer.cancel();
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => OnBoardingScreen()),
+            MaterialPageRoute(builder: (context) => const OnBoardingScreen()),
           );
         }
       });

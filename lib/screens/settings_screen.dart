@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:game/constants/images.dart';
+import 'package:game/screens/difficult_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -14,6 +16,21 @@ class SettingsScreen extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             fit: BoxFit.cover,
+          ),
+          Positioned(
+            top: 40,
+            left: 20,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const DifficultScreen(),
+                  ),
+                );
+              },
+              child: SvgPicture.asset(AppImages.homeIcon),
+            ),
           ),
           Positioned(
             bottom: -40,

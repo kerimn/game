@@ -1,14 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:game/constants/images.dart';
+import 'package:game/screens/level_choise.dart';
 import 'package:game/screens/settings_screen.dart';
 
-class DifficultScreen extends StatelessWidget {
+class DifficultScreen extends StatefulWidget {
   const DifficultScreen({super.key});
 
   @override
+  State<DifficultScreen> createState() => _DifficultScreenState();
+}
+
+class _DifficultScreenState extends State<DifficultScreen> {
+  List<String> imagePaths = [
+    AppImages.level1,
+    AppImages.level2,
+    AppImages.level3,
+  ];
+  int index = 0;
+
+  changeImage() {
+    setState(() {
+      if (index >= imagePaths.length - 1) {
+        return;
+      } else {
+        index = (index + 1);
+      }
+    });
+  }
+
+  minChange() {
+    setState(() {
+      if (index < imagePaths.length - 2) {
+        return;
+      } else {
+        index = (index - 1);
+      }
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    print(MediaQuery.of(context).size.height);
     return Scaffold(
       body: Stack(
         children: [
@@ -115,31 +147,50 @@ class DifficultScreen extends StatelessWidget {
                   ],
                 ),
                 Image.asset(
-                  AppImages.simple,
-                  width: MediaQuery.of(context).size.width * 0.6,
+                  imagePaths[index],
+                  width: MediaQuery.of(context).size.width * 0.4,
                   height: MediaQuery.of(context).size.height * 0.45,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
-                      AppImages.left,
-                      width: 50,
+                    GestureDetector(
+                      onTap: () {
+                        minChange();
+                      },
+                      child: SvgPicture.asset(
+                        AppImages.left,
+                        width: 50,
+                      ),
                     ),
                     const SizedBox(
                       width: 20,
                     ),
-                    Image.asset(
-                      AppImages.start,
-                      width: MediaQuery.of(context).size.width * 0.25,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LevelChoise()),
+                        );
+                      },
+                      child: Image.asset(
+                        AppImages.start,
+                        width: MediaQuery.of(context).size.width * 0.25,
+                      ),
                     ),
                     const SizedBox(
                       width: 20,
                     ),
-                    SvgPicture.asset(
-                      AppImages.right,
-                      width: 50,
+                    GestureDetector(
+                      onTap: () {
+                        changeImage();
+                      },
+                      child: SvgPicture.asset(
+                        AppImages.right,
+                        width: 50,
+                      ),
                     )
                   ],
                 )
