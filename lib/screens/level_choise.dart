@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:game/constants/images.dart';
 import 'package:game/screens/difficult_screen.dart';
+import 'package:game/screens/game_screen.dart';
 import 'package:game/screens/settings_screen.dart';
 
 class LevelChoise extends StatelessWidget {
@@ -142,13 +143,13 @@ class LevelChoise extends StatelessWidget {
             children: [
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
-                left:  MediaQuery.of(context).size.width*0.02,
+                left: MediaQuery.of(context).size.width * 0.02,
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SettingsScreen(),
+                        builder: (context) => const GameScreen(),
                       ),
                     );
                   },
@@ -169,7 +170,7 @@ class LevelChoise extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SettingsScreen(),
+                        builder: (context) => const GameScreen(),
                       ),
                     );
                   },
@@ -188,8 +189,7 @@ class LevelChoise extends StatelessWidget {
                       fontSize: 32.0,
                       fontStyle: FontStyle.normal,
                       fontWeight: FontWeight.w900,
-                      height: 22.974 /
-                          32.0, // Calculated as line-height / font-size
+                      height: 22.974 / 32.0,
                       letterSpacing: 1.436,
                     ),
                   ),
@@ -198,209 +198,337 @@ class LevelChoise extends StatelessWidget {
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.3,
                 left: MediaQuery.of(context).size.width * 0.12,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.43,
                 left: MediaQuery.of(context).size.width * 0.195,
-                child: const Text(
-                  "2",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "2",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
                 left: MediaQuery.of(context).size.width * 0.22,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.63,
                 left: MediaQuery.of(context).size.width * 0.295,
-                child: const Text(
-                  "3",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "3",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.3,
                 left: MediaQuery.of(context).size.width * 0.32,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.435,
                 left: MediaQuery.of(context).size.width * 0.395,
-                child: const Text(
-                  "4",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "4",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
                 left: MediaQuery.of(context).size.width * 0.42,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.63,
                 left: MediaQuery.of(context).size.width * 0.495,
-                child: const Text(
-                  "5",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "5",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.3,
                 left: MediaQuery.of(context).size.width * 0.52,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.435,
                 left: MediaQuery.of(context).size.width * 0.595,
-                child: const Text(
-                  "6",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "6",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
                 left: MediaQuery.of(context).size.width * 0.62,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.635,
                 left: MediaQuery.of(context).size.width * 0.7,
-                child: const Text(
-                  "7",
-                  style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    shadows: [
-                      Shadow(
-                        offset: Offset(0.957, 0.957),
-                        blurRadius: 0,
-                        color: Color(0xFF59173E),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
                       ),
-                    ],
-                    fontFamily: 'Inter',
-                    fontSize: 32.0,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w900,
-                    height: 22.974 / 32.0,
-                    letterSpacing: 1.436,
+                    );
+                  },
+                  child: const Text(
+                    "7",
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      shadows: [
+                        Shadow(
+                          offset: Offset(0.957, 0.957),
+                          blurRadius: 0,
+                          color: Color(0xFF59173E),
+                        ),
+                      ],
+                      fontFamily: 'Inter',
+                      fontSize: 32.0,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w900,
+                      height: 22.974 / 32.0,
+                      letterSpacing: 1.436,
+                    ),
                   ),
                 ),
               ),
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.3,
                 left: MediaQuery.of(context).size.width * 0.72,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.2,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.2,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(
@@ -429,11 +557,21 @@ class LevelChoise extends StatelessWidget {
               Positioned(
                 top: MediaQuery.of(context).size.height * 0.5,
                 left: MediaQuery.of(context).size.width * 0.82,
-                child: Image.asset(
-                  AppImages.dash,
-                  width: MediaQuery.of(context).size.width * 0.2,
-                  // height: MediaQuery.of(context).size.height * 0.18,
-                  fit: BoxFit.cover,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GameScreen(),
+                      ),
+                    );
+                  },
+                  child: Image.asset(
+                    AppImages.dash,
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    // height: MediaQuery.of(context).size.height * 0.18,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Positioned(

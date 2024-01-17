@@ -4,7 +4,7 @@ class AppImages {
   static const String left = "assets/img/left.svg";
   static const String right = "assets/img/right.svg";
   static const String homeIcon = "assets/img/homeicon.svg";
-
+  static const String kard = "assets/img/kard.svg";
   static const String initialPhoto = "assets/img/bg.png";
   static const String dash = "assets/img/dash.png";
   static const String initialPhoto2 = "assets/img/bg2.png";
@@ -14,6 +14,8 @@ class AppImages {
   static const String coin = "assets/img/coin.png";
   static const String heart = "assets/img/heart.png";
   static const String bg3 = "assets/img/bg3.jpg";
+  static const String yokarkyDash = "assets/img/11.png";
+  static const String bomb = "assets/img/bomb.png";
 
   static const String level1 = "assets/img/simple.png";
   static const String level2 = "assets/img/middle.png";
@@ -21,4 +23,6 @@ class AppImages {
 
   static const String settingsCard = "assets/img/settings_card.png";
   static const String settingsTop = "assets/img/Untitled-1.png";
+
+  static const String bolekdash = "assets/img/settings_top_card.png";
 }
